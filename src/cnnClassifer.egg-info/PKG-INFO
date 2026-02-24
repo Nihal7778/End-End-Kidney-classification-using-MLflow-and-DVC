@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: cnnClassifer
+Version: 0.0.0
+Summary: A small package for CNN app
+Home-page: https://github.com/Nihal/End-End-Kidney classification using MLFlow and DVC
+Author: Nihal
+Author-email: nihal77778@gmail.com
+Project-URL: Bug Tracker, https://github.com/Nihal/End-End-Kidney classification using MLFlow and DVC/issues
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: summary
+
+# End-End-Kidney-classification-using-MLflow-and-DVC
