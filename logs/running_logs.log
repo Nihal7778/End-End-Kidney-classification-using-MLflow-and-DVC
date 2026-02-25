@@ -12,3 +12,30 @@
 [2026-02-24 19:03:31,983: INFO: main]: >>>>> stage Data Ingestion Stage completed <<<<<
 
 x==========x]
+[2026-02-24 21:24:52,152: INFO: common]: yaml file: /Users/nihal/Downloads/End-End-Kidney-classification-using-MLflow-and-DVC/config/config.yaml loaded successfully]
+[2026-02-24 21:24:52,156: INFO: common]: yaml file: /Users/nihal/Downloads/End-End-Kidney-classification-using-MLflow-and-DVC/params.yaml loaded successfully]
+[2026-02-24 21:24:52,157: INFO: common]: created directory at: artifacts]
+[2026-02-24 21:24:54,875: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-02-24 21:24:54,961: WARNING: optimizer]: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-02-24 21:24:54,962: WARNING: __init__]: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-02-25 16:06:58,140: INFO: main]: >>>>> stage Data Ingestion Stage started <<<<<]
+[2026-02-25 16:06:58,141: INFO: common]: yaml file: /Users/nihal/Downloads/End-End-Kidney-classification-using-MLflow-and-DVC/config/config.yaml loaded successfully]
+[2026-02-25 16:06:58,142: INFO: common]: yaml file: /Users/nihal/Downloads/End-End-Kidney-classification-using-MLflow-and-DVC/params.yaml loaded successfully]
+[2026-02-25 16:06:58,142: INFO: common]: created directory at: artifacts]
+[2026-02-25 16:06:58,142: INFO: common]: created directory at: artifacts/data_ingestion]
+[2026-02-25 16:06:58,142: INFO: data_ingestion]: Downloading data from https://drive.google.com/file/d/1vlR39c46AZAOded2SlWVNYWA1iysWjTb/view?usp=drive_link to artifacts/data_ingestion/data.zip]
+[2026-02-25 16:07:00,745: INFO: data_ingestion]: Downloaded file size: ~ 11345 KB]
+[2026-02-25 16:07:00,835: INFO: main]: >>>>> stage Data Ingestion Stage completed <<<<<
+
+x==========x]
+[2026-02-25 16:07:00,835: INFO: main]: **************]
+[2026-02-25 16:07:00,835: INFO: main]: >>>>> stage Prepare Base Model Stage started <<<<<]
+[2026-02-25 16:07:00,836: INFO: common]: yaml file: /Users/nihal/Downloads/End-End-Kidney-classification-using-MLflow-and-DVC/config/config.yaml loaded successfully]
+[2026-02-25 16:07:00,836: INFO: common]: yaml file: /Users/nihal/Downloads/End-End-Kidney-classification-using-MLflow-and-DVC/params.yaml loaded successfully]
+[2026-02-25 16:07:00,836: INFO: common]: created directory at: artifacts]
+[2026-02-25 16:07:01,085: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-02-25 16:07:01,151: WARNING: optimizer]: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-02-25 16:07:01,152: WARNING: __init__]: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-02-25 16:07:01,207: INFO: main]: >>>>> stage Prepare Base Model Stage completed <<<<<
+
+x==========x]
