@@ -2,7 +2,7 @@
 
 ## Workflows
 
-'''bash
+```bash
 
 1.Update config.yaml
 2.Update params.yaml
@@ -15,3 +15,6 @@
 9.Update the app.py
 
 '''
+
+
+
