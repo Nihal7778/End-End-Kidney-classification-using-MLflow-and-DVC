@@ -5,4 +5,8 @@ artifacts/*
 .env
 .venv
 
-pycache
+__pycache__
+
+logs
+
+.vscode
