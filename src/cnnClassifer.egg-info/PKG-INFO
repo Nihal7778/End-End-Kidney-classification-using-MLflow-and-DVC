@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: cnnClassifer
+Version: 0.0.0
+Summary: A small package for CNN app
+Home-page: https://github.com/Nihal/End-End-Kidney classification using MLFlow and DVC
+Author: Nihal
+Author-email: nihal77778@gmail.com
+Project-URL: Bug Tracker, https://github.com/Nihal/End-End-Kidney classification using MLFlow and DVC/issues
+
+# End-End-Kidney-classification-using-MLflow-and-DVC
+
+## Workflows
+
+```bash
+
+1.Update config.yaml
+2.Update params.yaml
+3.Update the entity
+4.Update the configuration manager in src config
+5.Update the components
+6.Update the pipeline
+7.Update the main.py
+8.Update dvc.yaml
+9.Update the app.py
+
+
+
+
+
