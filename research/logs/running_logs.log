@@ -1,8 +1,0 @@
-[2026-02-25 19:24:22,590: INFO: common]: yaml file: /Users/nihal/Downloads/End-End-Kidney-classification-using-MLflow-and-DVC/config/config.yaml loaded successfully]
-[2026-02-25 19:24:22,591: INFO: common]: yaml file: /Users/nihal/Downloads/End-End-Kidney-classification-using-MLflow-and-DVC/params.yaml loaded successfully]
-[2026-02-25 19:24:22,592: INFO: common]: created directory at: artifacts]
-[2026-02-25 19:24:22,593: INFO: common]: created directory at: artifacts/training]
-[2026-02-25 19:26:11,695: INFO: common]: yaml file: /Users/nihal/Downloads/End-End-Kidney-classification-using-MLflow-and-DVC/config/config.yaml loaded successfully]
-[2026-02-25 19:26:11,698: INFO: common]: yaml file: /Users/nihal/Downloads/End-End-Kidney-classification-using-MLflow-and-DVC/params.yaml loaded successfully]
-[2026-02-25 19:26:11,701: INFO: common]: created directory at: artifacts]
-[2026-02-25 19:26:11,703: INFO: common]: created directory at: artifacts/training]
