@@ -53,7 +53,6 @@ wheels/
 mlruns/
 .dvc/cache/
 .dvc/tmp/
-dvc.lock
 
 # Logs
 logs/

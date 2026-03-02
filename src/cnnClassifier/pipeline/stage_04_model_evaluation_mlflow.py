@@ -3,14 +3,23 @@ from cnnClassifier.components.model_evaluation_mlflow import Evaluation
 from cnnClassifier import logger
 import mlflow, dagshub
 import os
+from dotenv import load_dotenv
 
 import tensorflow as tf
 tf.keras.__version__ = tf.__version__ # type: ignore
 
+load_dotenv()
+
 dagshub.init(repo_owner='Nihal7778', repo_name='End-End-Kidney-classification-using-MLflow-and-DVC', mlflow=True)
 
-os.environ['MLFLOW_TRACKING_USERNAME'] = 'Nihal7778'
-os.environ['MLFLOW_TRACKING_PASSWORD'] = '67563d147cac72c014987f56508cb92e23f67223'
+mlflow_username = os.getenv("MLFLOW_TRACKING_USERNAME")
+mlflow_password = os.getenv("MLFLOW_TRACKING_PASSWORD")
+
+if not mlflow_username or not mlflow_password:
+    raise ValueError("Set MLFLOW_TRACKING_USERNAME and MLFLOW_TRACKING_PASSWORD in .env")
+
+os.environ["MLFLOW_TRACKING_USERNAME"] = mlflow_username
+os.environ["MLFLOW_TRACKING_PASSWORD"] = mlflow_password
 
 # Set tracking URI
 mlflow.set_tracking_uri("https://dagshub.com/Nihal7778/End-End-Kidney-classification-using-MLflow-and-DVC.mlflow")
@@ -18,9 +27,9 @@ mlflow.set_tracking_uri("https://dagshub.com/Nihal7778/End-End-Kidney-classifica
 # Create or get experiment
 experiment_name = "kidney-classification-v2"
 try:
-    experiment_id = mlflow.create_experiment(experiment_name)
-except:
-    experiment_id = mlflow.get_experiment_by_name(experiment_name).experiment_id
+    mlflow.create_experiment(experiment_name)
+except Exception:
+    pass
 
 mlflow.set_experiment(experiment_name)
 

@@ -17,3 +17,4 @@ FLask
 Flask-Cors
 gdown
 -e .
+python-dotenv
