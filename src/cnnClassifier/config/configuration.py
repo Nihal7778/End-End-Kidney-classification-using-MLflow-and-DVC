@@ -1,10 +1,11 @@
 import os
 from pathlib import Path
-from cnnClassifier.utils.common import read_yaml, create_directories
+from cnnClassifier.utils.common import read_yaml, create_directories, save_json
 from cnnClassifier.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH
 from cnnClassifier.entity.config_entity import (DataIngestionConfig,
                                                 PrepareBaseModelConfig,
-                                                TrainingConfig)
+                                                TrainingConfig,
+                                                EvaluationConfig)
 
 class ConfigurationManager:
     def __init__(
@@ -72,17 +73,6 @@ class ConfigurationManager:
         return training_config
 
 
-class configurationManager:
-    def __init__(
-        self,
-        config_filepath=CONFIG_FILE_PATH, 
-        params_filepath=PARAMS_FILE_PATH):
-        
-        self.config = read_yaml(config_filepath)
-        self.params = read_yaml(params_filepath)
-
-        create_directories([self.config.artifacts_root])
-
     def get_training_config(self) -> TrainingConfig:
         training = self.config.training
         prepare_base_model = self.config.prepare_base_model
@@ -104,3 +94,17 @@ class configurationManager:
         )
 
         return training_config
+    
+
+    def get_evaluation_config(self) -> EvaluationConfig:
+        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "Chicken-fecal-images")
+        eval_config = EvaluationConfig(
+        path_of_model=Path("artifacts/training/trained_model.h5"),
+        training_data=Path(training_data),
+        mlflow_url="https://dagshub.com/Nihal7778/End-End-Kidney-classification-using-MLflow-and-DVC.mlflow",
+        all_params=self.params,
+        params_image_size=self.params.IMAGE_SIZE,
+        params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config
+    

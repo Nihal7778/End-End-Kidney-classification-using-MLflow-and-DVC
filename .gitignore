@@ -62,3 +62,31 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
+
+# Virtual envs
+.venv/
+
+# Secrets / env files
+.env
+.env.*
+*.env
+
+# Test / lint / type-check caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Python test envs
+.tox/
+.nox/
+
+# Local DB / system artifacts
+*.sqlite3
+__MACOSX/
+
+# MLflow artifact store (if used locally)
+mlartifacts/

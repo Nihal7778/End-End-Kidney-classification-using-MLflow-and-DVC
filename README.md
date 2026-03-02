@@ -1,4 +1,4 @@
-# End-End-Kidney-classification-using-MLflow-and-DVC
+# End-to-End Chicken Coccidiosis Classification Using VGG16, MLflow, and DVC
 
 ## Workflows
 
