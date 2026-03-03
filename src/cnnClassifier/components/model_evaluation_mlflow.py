@@ -1,4 +1,5 @@
 import tensorflow as tf
+tf.keras.__version__ = tf.__version__  #type : ignore
 from pathlib import Path
 import mlflow
 import mlflow.keras
@@ -6,7 +7,6 @@ from urllib.parse import urlparse
 from cnnClassifier.entity.config_entity import EvaluationConfig
 from cnnClassifier.utils.common import read_yaml, create_directories, save_json
 
-tf.keras.__version__ = tf.__version__  #type : ignore
 
 
 class Evaluation:

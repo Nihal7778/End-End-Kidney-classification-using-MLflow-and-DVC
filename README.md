@@ -14,7 +14,15 @@
 8.Update dvc.yaml
 9.Update the app.py
 
+```
 
+## DVC 
+
+'''bash
+
+1.dvc.init
+2.dvc.repro
+3.dvc.dag
 
 
 

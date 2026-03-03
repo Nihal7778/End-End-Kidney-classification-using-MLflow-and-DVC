@@ -1,13 +1,11 @@
+import tensorflow as tf
+tf.keras.__version__ = tf.__version__ # type: ignore
 from cnnClassifier.config.configuration import ConfigurationManager
 from cnnClassifier.components.model_evaluation_mlflow import Evaluation
 from cnnClassifier import logger
 import mlflow, dagshub
 import os
 from dotenv import load_dotenv
-
-import tensorflow as tf
-tf.keras.__version__ = tf.__version__ # type: ignore
-
 load_dotenv()
 
 dagshub.init(repo_owner='Nihal7778', repo_name='End-End-Kidney-classification-using-MLflow-and-DVC', mlflow=True)
