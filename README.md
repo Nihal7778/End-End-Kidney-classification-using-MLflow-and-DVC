@@ -78,13 +78,5 @@ This executes all four stages sequentially: data ingestion → base model prepar
 - Navigate to http://localhost:8080 in your browser. Upload a chicken fecal image, and the app will return a prediction of Coccidiosis or Healthy.
 - The prediction pipeline handles base64 image decoding, preprocessing (resizing to 224×224 and normalizing pixel values to [0, 1]), and inference using the trained model.
 
-## DVC commands
 
-```bash
-
-1.dvc.init
-2.dvc.repro
-3.dvc.dag
-
-```
 
