@@ -36,29 +36,7 @@
 ## Tech Stack
 CategoryToolsDeep LearningTensorFlow / Keras, VGG16Experiment TrackingMLflow, DagsHubPipeline OrchestrationDVCWeb FrameworkFlaskLanguagePython 3.8EnvironmentConda (mlops-env)
 
-## Project Structure
-├── .dvc/                       # DVC configuration
-├── .github/workflows/          # CI/CD workflows
-├── config/
-│   └── config.yaml             # Paths, URLs, and model configuration
-├── research/                   # Jupyter notebooks (experimentation)
-├── src/cnnClassifier/
-│   ├── components/             # Data ingestion, model training, evaluation
-│   ├── config/                 # ConfigurationManager
-│   ├── constants/              # Project root & path constants
-│   ├── entity/                 # Dataclass config entities
-│   ├── pipeline/               # Stage runners & prediction pipeline
-│   └── utils/                  # Common utilities
-├── templates/                  # Flask HTML templates
-├── app.py                      # Flask application entry point
-├── main.py                     # Pipeline orchestrator (all stages)
-├── params.yaml                 # Hyperparameters (epochs, batch size, LR, image size)
-├── dvc.yaml                    # DVC pipeline definition
-├── dvc.lock                    # DVC lock file
-├── scores.json                 # Evaluation metrics output
-├── requirements.txt            # Python dependencies
-├── setup.py                    # Package setup
-└── template.py                 # Project scaffolding script
+
 
 ## Pipeline Stages
 - StageDescriptionData IngestionDownloads and extracts the chicken fecal image datasetBase Model PreparationLoads VGG16 with ImageNet weights and prepares a custom classification headModel TrainingFine-tunes the model on the training set with configurable hyperparametersModel EvaluationEvaluates on the test set, logs metrics and the model to MLflow
@@ -84,9 +62,8 @@ This executes all four stages sequentially: data ingestion → base model prepar
 - Metrics logged include test loss and test accuracy. The trained model is also registered as an MLflow artifact.
 
 ## DVC Pipeline
-DVC manages pipeline reproducibility and data versioning.
-bash# Initialize DVC (first time only)
-dvc init
+- DVC manages pipeline reproducibility and data versioning.
+- dvc init
 
 # Reproduce the full pipeline
 - dvc repro
